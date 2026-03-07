@@ -6,7 +6,17 @@
   --text-color: #1f2937;
   --text-muted: #6b7280;
   --border-color: #e2e8f0;
+  --badge-bg: #ede9fe;
   --font-size-base: 16px;
+}
+
+.container.dark {
+  --background-color: #0f172a;
+  --surface-color: #1e293b;
+  --text-color: #f1f5f9;
+  --text-muted: #94a3b8;
+  --border-color: #334155;
+  --badge-bg: #1e1b4b;
 }
 
 * {
@@ -28,13 +38,33 @@ body {
   margin: 0 auto;
   padding: 96px 24px 64px;
   text-align: center;
+  background-color: var(--background-color);
+  min-height: 100vh;
+  position: relative;
+}
+
+.dark-toggle {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.15s, border-color 0.15s;
+}
+
+.dark-toggle:hover {
+  background-color: var(--border-color);
 }
 
 .badge {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background-color: #ede9fe;
+  background-color: var(--badge-bg);
   color: var(--primary-dark);
   font-size: 0.8125rem;
   font-weight: 600;
@@ -120,7 +150,7 @@ h1 {
 }
 
 .secondary-button:hover {
-  background-color: #f1f5f9;
+  background-color: var(--border-color);
   transform: translateY(-1px);
 }
 

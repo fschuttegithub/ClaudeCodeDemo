@@ -1,8 +1,14 @@
+import { useState } from 'react'
 import './App.css'
 
 function App() {
+  const [dark, setDark] = useState(false)
+
   return (
-    <div className="container">
+    <div className={`container${dark ? ' dark' : ''}`}>
+      <button className="dark-toggle" onClick={() => setDark(d => !d)} aria-label="Toggle dark mode">
+        {dark ? '☀️' : '🌙'}
+      </button>
       <header>
         <div className="badge">
           <span className="badge-dot" />
