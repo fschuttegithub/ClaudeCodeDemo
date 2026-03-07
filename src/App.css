@@ -33,6 +33,10 @@ body {
   min-height: 100vh;
 }
 
+body.dark {
+  background-color: #0f172a;
+}
+
 .container {
   max-width: 680px;
   margin: 0 auto;

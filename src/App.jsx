@@ -1,8 +1,12 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
 
 function App() {
   const [dark, setDark] = useState(false)
+
+  useEffect(() => {
+    document.body.classList.toggle('dark', dark)
+  }, [dark])
 
   return (
     <div className={`container${dark ? ' dark' : ''}`}>
