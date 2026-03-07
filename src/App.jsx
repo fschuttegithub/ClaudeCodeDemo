@@ -8,7 +8,7 @@ function App() {
           <span className="badge-dot" />
           AI-Powered Demo
         </div>
-        <h1>Welcome to the Demo</h1>
+        <h1>Hi, Welcome to Frank's Random Demo</h1>
         <p className="subtitle">This app is powered by Claude — tag @Claude in Slack to change anything here.</p>
       </header>
 
