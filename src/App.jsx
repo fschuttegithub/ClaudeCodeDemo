@@ -85,6 +85,20 @@ function App() {
           </svg>
         </div>
 
+        <div className="potential-section">
+          <div className="potential-header">
+            <span className="potential-label">What this could become</span>
+          </div>
+          <p className="potential-intro">This is just the beginning. With Claude in the loop, any of these are a Slack message away:</p>
+          <ul className="potential-list">
+            <li><span className="potential-icon">📊</span><span>Live dashboards — pull real data from APIs and display it dynamically</span></li>
+            <li><span className="potential-icon">🔔</span><span>Alerting tools — surface incidents or KPIs your team actually cares about</span></li>
+            <li><span className="potential-icon">🗂️</span><span>Internal portals — build lightweight ops or HR tools without a dev sprint</span></li>
+            <li><span className="potential-icon">🔗</span><span>Integrations — connect Slack, Jira, Notion, or any service with an API</span></li>
+            <li><span className="potential-icon">🤖</span><span>AI features — embed Claude directly into the product for end users</span></li>
+          </ul>
+        </div>
+
         <div className="status-section">
           <div className="status-left">
             <span className="status-indicator" />
